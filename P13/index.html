@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Cards</title>
+</head>
+<body>
+    <button class="btn btn-clear" id="clear">
+        <i class="fas fa-trash"> Clear Cards</i>
+    </button>
+
+    <h1>
+        Memory Cards
+        <button class="btn btn-small" id="addCard">
+            <i class="fas fa-plus"></i> Add New Card
+        </button>
+    </h1>
+
+    <div class="cardContainer" id="cardContainer">
+        <div class="card active">
+            <div class="inner-card">
+                <div class="card-front">
+                    <p>What is HTML?</p>
+                </div>
+                <div class="card-back">
+                    <p>HTML stands for Hypertext MArkup Language used for creating the structure of a webpage.</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cardContainer" id="cardContainer">
+        <div class="card">
+            <div class="inner-card">
+                <div class="card-front">
+                    <p>What is CSS?</p>
+                </div>
+                <div class="card-back">
+                    <p>CSS stands for Cascading Style Sheets and it's used for designing the appearance of a webpage.</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
