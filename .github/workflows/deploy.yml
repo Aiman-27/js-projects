@@ -27,9 +27,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Installing Node
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v14-beta
         with: 
-          node-version:  '12'
+          node-version:  '14'
           
       # step to install surge
       - name: Installing Surge
@@ -37,5 +37,5 @@ jobs:
        
      #Deploy App to Surge
       - name: Deploying project to Surge
-        run: surge ./ aiman_js-projects.surge.sh --token ${{secrets.SURGE_TOKEN}}  
+        run: surge ./ aiman27_js-projects.surge.sh --token ${{secrets.SURGE_TOKEN}}  
      
