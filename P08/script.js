@@ -50,11 +50,11 @@ function searchMeal(e) {
 //function to fetch meal data using the meal id
 function getMealByID(mealID) {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`)
-    .then( res => res.json()) 
-    .then( data => {
-        const meal = data.meals[0];
-        addMealToDOM(meal);
-    })
+        .then( res => res.json()) 
+        .then( data => {
+            const meal = data.meals[0];
+            addMealToDOM(meal);
+        })
 }
 
 //function to add a meal to dom
@@ -75,13 +75,13 @@ function addMealToDOM(meal) {
             <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
             <div class="selected-meal-info">
                 ${meal.strCategory ? `<p>${meal.strCategory}</p>` : ''}
-                ${meal.strArea ? `<p>${meal.strArea}</p>` : ''}
+                ${meal.strArea ? `<p>${meal.strArea}</p>` : '' }
             </div>
             <div class ="main">
                 <p>${meal.strInstructions}</p>
                 <h2>Ingredients</h2>
                 <ul>
-                ${ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+                    ${ingredients.map( ingredient => `<li>${ingredient}</li>`).join('')}
                 </ul>
             </div>
         </div>
