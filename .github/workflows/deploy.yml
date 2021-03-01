@@ -37,5 +37,5 @@ jobs:
        
      #Deploy App to Surge
       - name: Deploying project to Surge
-        run: surge ./ aiman27_js-projects.surge.sh --token ${{secrets.SURGE_TOKEN}}  
+        run: surge ./ Aiman-27_js-projects.surge.sh --token ${{secrets.SURGE_TOKEN}}  
      
