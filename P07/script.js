@@ -10,7 +10,7 @@ const notification = document.getElementById('slider-container');
 const hangmanParts =document.querySelectorAll('.hangman-part');
 
 //An array of words to select from
-const wordPool = ['javaScript','computer','hangman','facebook','youtube','instagram'];
+const wordPool = ['javascript','computer','hangman','facebook','youtube','instagram'];
 
 //selecting a word at random from the pool
 let selectedWord = wordPool[Math.floor(Math.random() * wordPool.length)];
